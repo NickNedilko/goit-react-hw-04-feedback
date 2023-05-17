@@ -9,9 +9,10 @@ const FeedbackOptions = ({ options, handleClick }) => {
         className={css.button}
         key={option}
         type="button"
-        onClick={() => handleClick(option)}
+        name={option}
+        onClick={handleClick}
       >
-        <span className={css.btnName}>{option}</span>
+        {option}
       </button>
     );
   });
